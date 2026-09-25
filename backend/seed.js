@@ -1,0 +1,1 @@
+console.log('Seed not needed for in-memory mode. Admin: admin@skillhub.com / admin123');
