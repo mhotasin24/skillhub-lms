@@ -40,4 +40,4 @@ app.post('/api/payment/verify',(req,res)=>{
  if(!trxId) return res.status(400).json({error:'TrxID required'});
  res.json({success:true,message:`bKash 01784549493 verified TrxID: ${trxId}`});
 });
-app.listen(5000,()=>console.log('✅ Backend: http://localhost:5000 | 3 courses | bKash: 01784549493'));
+app.listen(process.env.PORT || 5000,()=>console.log('✅ Backend: http://localhost:5000 | 3 courses | bKash: 01784549493'));
